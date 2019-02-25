@@ -1,10 +1,11 @@
-#Installation
-###clone files to your project  
+Installation
+
+clone files to your project  
 ```
 cd .../project_name
 git clone https://github.com/OnGridSystems/feedback_app
 ```
-###Add 'feedback_app' to your config
+Add 'feedback_app' to your config
 Make sure that `'django.contrib.staticfiles'` is set up properly and add to `INSTALLED_APPS`
 ```
 INSTALLED_APPS = (
@@ -32,55 +33,56 @@ urlpatterns = [
 ]
 ```
 
-###Do not forget to migrate!!!
+Do not forget to migrate!!!
 
 
-#Configuration
-###FEEDBACK_APP_CONFIG
+Configuration
+##
+FEEDBACK_APP_CONFIG
 This dictionary contains all configuration options.
 
-###`'insert_before'`
+`'insert_before'`
 
 Default: `'</body>'`
 
 'feedback_app' searches for this string in the HTML and inserts itself just before.
 ##
-###`'fm_title'`
+`'fm_title'`
 
 Default: `'Send message'`
 
 Modal window title text.
 
 ##
-###`'fm_tooltip'`
+`'fm_tooltip'`
 
 Default: `'Send an error message or a wish'`
 
 Icon tooltip text
 
 ##
-###`'fm_alert_message'`
+`'fm_alert_message'`
 
 Default: `'Message sent!'`
 
 Alert text after sending
 
 ##
-###`'fm_send_button'`
+`'fm_send_button'`
 
 Default: `'Send'`
 
 Button "Send" text
 
 ##
-###`'fm_fields'`
+`'fm_fields'`
 
 Default: `['name', 'email', 'phone']`
 
 List of fields displayed in the modal window. 
 The field "message" - will be displayed necessarily.
 ##
-###`'fm_fields_placeholders'`
+`'fm_fields_placeholders'`
 Must be dictionary
 Default: `{"name": "Name", "email": "E-mail", "phone": "Phone", "message": "Enter your message*"}`
 
