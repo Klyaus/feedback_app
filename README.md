@@ -88,8 +88,7 @@ Must be dictionary
 
 Default: `{"name": "Name", "email": "E-mail", "phone": "Phone", "message": "Enter your message*"}`
 
-Dictionary of fields displayed in the modal window. 
-The field "message" - will be displayed necessarily.
+Dictionary of fields and placeholders displayed in the modal window.
 
 Example:
 ```
