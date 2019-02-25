@@ -1,0 +1,73 @@
+{% load static %}
+
+<link href="{% static 'css/fm.css' %}" rel="stylesheet">
+
+<a class='fm-icon' href="#modal-sections" data-uk-toggle
+   data-uk-tooltip="{{ fm_tooltip }}">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+         viewBox="0 0 224 224" width="40px" height="40px">
+        <g transform="">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,224v-224h224v224z" fill="none"/>
+                <g fill="#ffffff">
+                    <path d="M51.52,44.8c-13.5856,0 -24.64,11.0544 -24.64,24.64v85.12437c0,13.58112 11.04576,24.62891 24.62688,24.63563c-0.09184,6.14432 -0.90535,13.43097 -8.29063,20.81625c-0.64064,0.64064 -0.83283,1.60349 -0.48563,2.44125c0.34496,0.83552 1.16441,1.3825 2.06937,1.3825c12.92256,0 35.86839,-3.24128 46.23063,-24.64h81.44937c13.5856,0 24.64,-11.0544 24.64,-24.64v-85.12c0,-13.5856 -11.0544,-24.64 -24.64,-24.64zM51.52,49.28h120.96c11.11712,0 20.16,9.04512 20.16,20.16v85.12c0,11.11488 -9.04288,20.16 -20.16,20.16h-82.88c-0.88704,0 -1.68686,0.5236 -2.0475,1.33c-7.8624,17.68928 -25.32583,22.25255 -37.69063,23.13063c6.1376,-8.232 6.13812,-16.18607 6.13812,-22.22063c0,-1.23648 -1.00128,-2.24 -2.24,-2.24h-2.24c-11.11712,0 -20.16,-9.04075 -20.16,-20.15563v-85.12437c0,-11.11488 9.04288,-20.16 20.16,-20.16zM50.4,56c-6.79168,0 -12.32,5.52608 -12.32,12.32v85.12c0,0.61824 0.50176,1.12 1.12,1.12c0.61824,0 1.12,-0.50176 1.12,-1.12v-85.12c0,-5.55744 4.52256,-10.08 10.08,-10.08h123.2c5.55744,0 10.08,4.52256 10.08,10.08v87.36c0,5.55744 -4.52256,10.08 -10.08,10.08h-60.48h-4.48c-0.61824,0 -1.12,0.50176 -1.12,1.12c0,0.61824 0.50176,1.12 1.12,1.12h4.48h60.48c6.79168,0 12.32,-5.52608 12.32,-12.32v-87.36c0,-6.79392 -5.52832,-12.32 -12.32,-12.32zM95.2,165.76c-0.61824,0 -1.12,0.50176 -1.12,1.12c0,0.61824 0.50176,1.12 1.12,1.12h6.72c0.61824,0 1.12,-0.50176 1.12,-1.12c0,-0.61824 -0.50176,-1.12 -1.12,-1.12z"/>
+                </g>
+                <path d="" fill="none"/>
+                <g fill="#ffffff">
+                    <path d="M83.9,112.085v0c0,-1.37333 0.40667,-2.52 1.22,-3.44c0.82,-0.91333 2.04667,-1.37 3.68,-1.37c1.63333,0 2.87,0.45667 3.71,1.37c0.84667,0.92 1.27,2.06667 1.27,3.44v0c0,1.32 -0.42333,2.42333 -1.27,3.31c-0.84,0.88667 -2.07667,1.33 -3.71,1.33c-1.63333,0 -2.86,-0.44333 -3.68,-1.33c-0.81333,-0.88667 -1.22,-1.99 -1.22,-3.31zM107.06,112.085v0c0,-1.37333 0.40667,-2.52 1.22,-3.44c0.82,-0.91333 2.04667,-1.37 3.68,-1.37c1.63333,0 2.87,0.45667 3.71,1.37c0.84667,0.92 1.27,2.06667 1.27,3.44v0c0,1.32 -0.42333,2.42333 -1.27,3.31c-0.84,0.88667 -2.07667,1.33 -3.71,1.33c-1.63333,0 -2.86,-0.44333 -3.68,-1.33c-0.81333,-0.88667 -1.22,-1.99 -1.22,-3.31zM130.22,112.085v0c0,-1.37333 0.40667,-2.52 1.22,-3.44c0.82,-0.91333 2.04667,-1.37 3.68,-1.37c1.63333,0 2.87,0.45667 3.71,1.37c0.84667,0.92 1.27,2.06667 1.27,3.44v0c0,1.32 -0.42333,2.42333 -1.27,3.31c-0.84,0.88667 -2.07667,1.33 -3.71,1.33c-1.63333,0 -2.86,-0.44333 -3.68,-1.33c-0.81333,-0.88667 -1.22,-1.99 -1.22,-3.31z"/>
+                </g>
+            </g>
+        </g>
+    </svg>
+</a>
+
+<div id="modal-sections" data-uk-modal>
+    <div class="uk-modal-dialog">
+        <form action="" method="post" id="fm_form"> {% csrf_token %}
+
+            <button class="uk-modal-close-default" type="button" data-uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">{{ fm_title }} {{ fm_fields }}</h2>
+
+            </div>
+            <div class="uk-modal-body">
+                {% for field in form %}
+                    <div class="uk-margin"> {{ field }}</div>
+                {% endfor %}
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default" type="submit">{{ fm_send_button }}</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    if (!window.jQuery) {
+        document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js' %3E%3C/script%3E"))
+    }
+</script>
+
+
+<script type="text/javascript">
+    $('#fm_form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/feedback_app/',
+            type: 'post',
+            data: $('#fm_form').serialize(),
+            success: function (e) {
+                $('#fm_form')[0].reset();
+                UIkit.modal.alert('{{ fm_alert_message }}')
+            }
+        })
+    })
+</script>
+
+
+<script src="{% static 'js/uikit_modal.js' %}"></script>
+<script src="{% static 'js/uikit_tooltip.js' %}"></script>
+
