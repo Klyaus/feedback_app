@@ -3,7 +3,7 @@ Installation
 clone files to your project  
 ```
 cd .../project_name
-git clone https://github.com/OnGridSystems/feedback_app
+git clone https://github.com/Klyaus/feedback_app
 ```
 Add 'feedback_app' to your config
 Make sure that `'django.contrib.staticfiles'` is set up properly and add to `INSTALLED_APPS`
