@@ -83,6 +83,7 @@ List of fields displayed in the modal window.
 The field "message" - will be displayed necessarily.
 ##
 `'fm_fields_placeholders'`
+
 Must be dictionary
 
 Default: `{"name": "Name", "email": "E-mail", "phone": "Phone", "message": "Enter your message*"}`
